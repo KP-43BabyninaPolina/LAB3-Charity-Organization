@@ -20,6 +20,7 @@ public abstract class CharityDatabase extends RoomDatabase {
         if (INSTANCE == null) {
             INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             CharityDatabase.class, "charity_db")
+                    .fallbackToDestructiveMigration(true)
                     .build();
         }
         return INSTANCE;
