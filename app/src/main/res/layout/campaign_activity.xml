@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назва кампанії"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etCampaignName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Введіть назву"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ПІБ відповідальної особи"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etOrganizerName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Прізвище Ім'я По-батькові"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Організація-ініціатор"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerOrganization"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата початку"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="дд.мм.рррр"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата кінця"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="дд.мм.рррр"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:inputType="date" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Цільова сума (грн)"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etTargetAmount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/layoutDonation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Внести кошти до поточного збору"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <EditText
+                android:id="@+id/etDonationAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Сума внеску (грн)"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Опис загальної мети"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etGoalDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Опишіть мету проведення кампанії..."
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зберегти"
+            android:textSize="16sp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Видалити"
+            android:textSize="16sp"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
