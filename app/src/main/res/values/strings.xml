@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Lab3CharityOrganization</string>
+    <string name="app_name">CharityPlatform</string>
+
+    <string name="admin_role">Роль: Адміністратор</string>
+
+    <string name="progress_head">Загальний прогрес</string>
+    <string name="progress_load">Завантаження статистики…</string>
+
+    <string name="create_campaign_button">Створити Кампанію</string>
 </resources>

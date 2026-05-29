@@ -3,17 +3,17 @@ plugins {
 }
 
 android {
-    namespace 'com.example.lab3charityorganization'
+    namespace 'java.ua.kpi.charity'
     compileSdk {
-        version = release(37) {
+        version = release(36) {
             minorApiLevel = 1
         }
     }
 
     defaultConfig {
-        applicationId "com.example.lab3charityorganization"
+        applicationId "java.ua.kpi.charity"
         minSdk 24
-        targetSdk 37
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
