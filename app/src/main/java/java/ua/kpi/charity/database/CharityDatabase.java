@@ -15,7 +15,6 @@ public abstract class CharityDatabase extends RoomDatabase {
 
     public abstract CampaignDao campaignDao();
 
-
     public static synchronized CharityDatabase getInstance(Context context) {
         if (INSTANCE == null) {
             INSTANCE = Room.databaseBuilder(context.getApplicationContext(),

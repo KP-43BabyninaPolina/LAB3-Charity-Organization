@@ -76,7 +76,7 @@ public class Campaign {
     public double getTargetAmount() { return targetAmount; }
     public void setTargetAmount(double targetAmount) {
         this.targetAmount = targetAmount;
-        recalculateTargetStatus(); // Автоматично оновлюємо статус, якщо змінили ціль
+        recalculateTargetStatus();
     }
 
     public double getCurrentAmount() { return currentAmount; }
