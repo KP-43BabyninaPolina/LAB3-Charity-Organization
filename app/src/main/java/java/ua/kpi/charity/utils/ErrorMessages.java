@@ -3,6 +3,8 @@ package java.ua.kpi.charity.utils;
 public class ErrorMessages {
     public static final String UNKNOWN_MODE_ERROR = "Помилка: невідомий режим роботи екрану";
     public static final String EMPTY_FIELDS_ERROR = "Усі обов'язкові поля мають бути заповнені!";
+    public static final String TEXT_FORMAT_ERROR = "Це поле може містити лише літери, пробіли, дефіси та апострофи!";
+
     public static final String CAMPAIGN_NAME_TOO_SHORT_ERROR = "Назва кампанії має містити щонайменше 10 символів!";
     public static final String ORGANIZER_NAME_TOO_SHORT_ERROR = "ПІБ має бути не коротшим за 8 символів!";
     public static final String ORGANIZER_NAME_FORMAT_ERROR = "Введіть повне ПІБ (Прізвище, Ім'я, По-батькові, розділені пробілами)!";

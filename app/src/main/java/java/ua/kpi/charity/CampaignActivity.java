@@ -256,11 +256,19 @@ public class CampaignActivity extends AppCompatActivity {
             etOrganizerName.setError(ErrorMessages.ORGANIZER_NAME_TOO_SHORT_ERROR);
             return true;
         }
+
+        String nameRegex = "^[a-zA-Zа-яА-ЯіІїЇєЄґҐ\\s\\-']+$";
+        if (!organizer.matches(nameRegex)) {
+            etOrganizerName.setError(ErrorMessages.TEXT_FORMAT_ERROR);
+            return true;
+        }
+
         String[] words = organizer.split("\\s+");
         if (words.length < 3) {
             etOrganizerName.setError(ErrorMessages.ORGANIZER_NAME_FORMAT_ERROR);
             return true;
         }
+
         return false;
     }
 
@@ -269,6 +277,13 @@ public class CampaignActivity extends AppCompatActivity {
             etName.setError(ErrorMessages.CAMPAIGN_NAME_TOO_SHORT_ERROR);
             return true;
         }
+
+        String nameRegex = "^[a-zA-Zа-яА-ЯіІїЇєЄґҐ\\s\\-']+$";
+        if (!name.matches(nameRegex)) {
+            etName.setError(ErrorMessages.TEXT_FORMAT_ERROR);
+            return true;
+        }
+
         return false;
     }
 

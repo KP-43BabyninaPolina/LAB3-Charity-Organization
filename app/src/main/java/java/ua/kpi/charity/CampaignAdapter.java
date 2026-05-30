@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.Locale;
 
 public class CampaignAdapter extends ArrayAdapter<Campaign> {
-
     private final Context context;
 
     public CampaignAdapter(@NonNull Context context, @NonNull List<Campaign> campaigns) {
